@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riesgos de Redes Sociales</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-shield-alt me-2"></i>Seguridad Digital
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#riesgos">Riesgos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proteccion">Protección</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#casosRealesModal">Casos Reales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero bg-light py-5">
+    <div class="container text-center py-4">
+      <h1 class="display-4 fw-bold">Protege tus Datos en Redes Sociales</h1>
+      <p class="lead">Aprende cómo tus datos pueden ser usados y cómo evitar riesgos.</p>
+      <a href="#riesgos" class="btn btn-primary btn-lg mt-3">Comenzar</a>
+    </div>
+  </header>
+
+  <!-- Sección: Recolección de Datos -->
+  <section class="py-5" id="recoleccion">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">¿Cómo recopilan tus datos?</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <i class="fas fa-cookie text-danger me-2"></i>Cookies y rastreo de actividad
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-user-tag text-warning me-2"></i>Permisos de aplicaciones
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-ad text-info me-2"></i>Publicidad personalizada
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZjiBK9EthNDPAnLOebaHGlZ_OA-LulXLzw&s/600x400" alt="Recolección de datos" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Riesgos -->
+  <section class="py-5 bg-light" id="riesgos">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Riesgos Principales</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-danger">
+            <div class="card-body text-center">
+              <i class="fas fa-id-card text-danger fa-3x mb-3"></i>
+              <h5 class="card-title">Robo de Identidad</h5>
+              <p class="card-text">Usan fotos/info para suplantarte en fraudes.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-warning">
+            <div class="card-body text-center">
+              <i class="fas fa-bullhorn text-warning fa-3x mb-3"></i>
+              <h5 class="card-title">Ciberacoso</h5>
+              <p class="card-text">Hostigamiento con datos personales expuestos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-info">
+            <div class="card-body text-center">
+              <i class="fas fa-lock-open text-info fa-3x mb-3"></i>
+              <h5 class="card-title">Pérdida de Privacidad</h5>
+              <p class="card-text">Acceso no deseado a ubicación, fotos, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Protección -->
+  <section class="py-5" id="proteccion">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">¿Cómo Protegerte?</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+              <h5><i class="fas fa-cog me-2"></i>Ajustes de Privacidad</h5>
+            </div>
+            <div class="card-body">                
+              <p>Configura quién ve tus publicaciones (ej. "Solo amigos").</p>
+              <!-- Botón de Ajustes de Privacidad (actualizado) -->
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#privacidadModal">Guía paso a paso</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <!-- Botón de 2FA (actualizado) -->
+              <h5><i class="fas fa-lock me-2"></i>Autenticación en Dos Pasos</h5>
+            </div>
+            <div class="card-body">
+              <p>Actívala en Facebook, Instagram, Twitter, etc.</p>
+              <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#authModal">Cómo activarla</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal: Ajustes de Privacidad -->
+<div class="modal fade" id="privacidadModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title"><i class="fas fa-cog me-2"></i>Guía de Ajustes de Privacidad</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="fw-bold">Pasos para cada red social:</h6>
+          <ul class="list-group mb-4">
+            <li class="list-group-item">
+              <strong>Facebook:</strong>
+              <ol>
+                <li>Ve a <em>Configuración > Privacidad</em>.</li>
+                <li>En "¿Quién puede ver tus publicaciones?", elige <em>"Amigos"</em> (no "Público").</li>
+                <li>Revisa <em>"Limitar audiencia para publicaciones pasadas"</em>.</li>
+              </ol>
+            </li>
+            <li class="list-group-item">
+              <strong>Instagram:</strong>
+              <ol>
+                <li>Ve a <em>Ajustes > Privacidad</em>.</li>
+                <li>Activa <em>"Cuenta privada"</em>.</li>
+                <li>En <em>"Historia"</em>, restringe quién puede verla.</li>
+              </ol>
+            </li>
+          </ul>
+          <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Consejo:</strong> Revisa estos ajustes cada 3 meses, ¡las redes sociales actualizan sus políticas!
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="#" class="btn btn-primary">Descargar Guía PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal: Autenticación en Dos Pasos -->
+  <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title"><i class="fas fa-lock me-2"></i>Activación de 2FA</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold">¿Qué es la autenticación en dos pasos (2FA)?</p>
+          <p>Es una capa extra de seguridad que requiere un código adicional (además de tu contraseña) para ingresar a tu cuenta.</p>
+          
+          <h6 class="mt-4 fw-bold">Cómo activarla:</h6>
+          <div class="accordion" id="accordion2FA">
+            <!-- Acordeón Facebook -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facebook2FA">
+                  <i class="fab fa-facebook me-2 text-primary"></i>Facebook
+                </button>
+              </h2>
+              <div id="facebook2FA" class="accordion-collapse collapse" data-bs-parent="#accordion2FA">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Ve a <em>Configuración > Seguridad e inicio de sesión</em>.</li>
+                    <li>En "Autenticación en dos pasos", haz clic en <em>"Editar"</em>.</li>
+                    <li>Elige <em>"Aplicación de autenticación"</em> (recomendado) o <em>"Mensaje de texto"</em>.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Acordeón Instagram -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#instagram2FA">
+                  <i class="fab fa-instagram me-2 text-danger"></i>Instagram
+                </button>
+              </h2>
+              <div id="instagram2FA" class="accordion-collapse collapse" data-bs-parent="#accordion2FA">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Ve a <em>Ajustes > Seguridad > Autenticación en dos pasos</em>.</li>
+                    <li>Selecciona <em>"Aplicación de autenticación"</em>.</li>
+                    <li>Escanea el código QR con apps como <strong>Google Authenticator</strong> o <strong>Authy</strong>.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal: Casos Reales (Video YouTube) -->
+<div class="modal fade" id="casosRealesModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title"><i class="fas fa-play-circle me-2"></i>El Escándalo de Cambridge Analytica</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenedor del video (responsive) -->
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="https://www.youtube.com/embed/IHzVfwfvfRs?autoplay=0" 
+              title="YouTube video: Cambridge Analytica" 
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bold">Resumen del caso:</p>
+            <p>Cambridge Analytica recopiló datos de millones de usuarios de Facebook sin consentimiento para influir en elecciones políticas.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>© 2023 Seguridad Digital. Todos los derechos reservados.</p>
+      <div class="mt-3">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
